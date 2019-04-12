@@ -1,0 +1,57 @@
+.nav__container {
+    background-color: #fafbfc;
+    border-bottom: 1px solid #e1e4e8;
+    margin-bottom: 20px;
+}
+
+.repo__details {
+    display: flex;
+    padding-top: 15px;
+    justify-content: space-between;
+
+    .repo__stats {
+        display: flex;
+        
+        div {
+            border: 1px solid rgba(27,31,35,.2);
+            margin: 0 5px;
+            padding: 5px;
+            border-radius: 4px;
+            i {
+                margin-right: 5px;
+            }
+            span {
+                height: 100%;
+            }
+            span + span {
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+.tab__list {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    li {
+        .tab {
+            text-decoration: none;
+            padding: 10px 20px;
+            color: #000000;
+        }
+        .tab__active {
+            background-color: #ffffff;
+            border-top: 2px solid red;
+            border-bottom: 1px solid #ffffff;
+        }
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .nav__container {
+        padding: 0 10%;
+    }
+}
